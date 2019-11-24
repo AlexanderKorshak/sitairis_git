@@ -12,15 +12,10 @@ body {
 }
 
 header {
-    margin: 10px auto auto;
-    /*
-    width: 924px;
-    */
+    margin: 20px auto auto;
     width: 82%;
     height: 320px;
     background: url("../resource/header.jpg") 100% 62%;
-    /*    border: 6px solid #373b46;*/
-    border-radius: 20px;
     border: 2px solid black;
     box-shadow: 0 0 5px 2px;
 }
