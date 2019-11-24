@@ -13,11 +13,8 @@ body {
 
 header {
     margin: 10px auto auto;
-    /*
     width: 924px;
-    */
-    width: 82%;
-    height: 320px;
+    height: 40%;
     background: url("../resource/header.jpg") 100% 62%;
     /*    border: 6px solid #373b46;*/
     border-radius: 20px;
