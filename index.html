@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/script.js"></script>
+    <title>Лабараторная работа №5</title>
+</head>
+<body onload="load_table()">
+<header></header>
+<div id="content__container" style="text-align: center" >
+    <form id="content_form" method="post" onsubmit="return add_automobile()">
+        <fieldset id="mainInfo"><br>
+            <legend align="center" style="font-size: 24px">Информация об автомобиле</legend>
+
+            <input type="text" id="series" name="series" placeholder="Серия (формат: ЦЦЦЦББ)" autocomplete="off" required pattern="[0-9]{4}[A-Z]{2}" ><br><br><!--autofocus-->
+
+            <label for="typ">Назначение</label>
+            <select id="typ" name="typ">
+                <option value="Седан">Седан</option>
+                <option value="Универсал">Универсал</option>
+                <option value="Купе">Купе</option>
+                <option value="Хэтчбек">Хэтчбек</option>
+                <option value="Внедорожник">Внедорожник</option>
+            </select><br><br>
+
+            <input type="text" id="address" name="address" placeholder="Адрес производителя" autocomplete="off" pattern="[А-яёЁA-z0-9 ][А-яёЁA-z0-9 -.,]{3,50}" required><br><br>
+
+             <label for="releaseDate">Дата выпуска</label>
+            <input type="date" id="releaseDate" name="releaseDate" min="2010-01-01" max="2019-11-19" required><br><br>
+            <button class="blue" type="button" id="addInfo" onclick="add_fields()">Доп. информация</button>
+
+        </fieldset><br>
+
+        <button class="blue" type="submit" name="submit">Добавить автомобиль</button>&emsp;
+        <button type="reset" name="reset">Сбросить информацию</button><br>
+
+    </form>
+
+    <label for="automobileID">Удалить запись с ID</label>
+    <select id="automobileID" name="automobile_id">
+    </select>&emsp;
+    <button class="red" type="button" name="submit" onclick="delete_automobile(); load_table()">Удалить</button><br><br>
+    <button class="blue" type="button" name="submit" onclick="get_type()">Список седанов</button>
+
+        <fieldset style="margin-top: 15px; padding: 0;"><br>
+            <legend align="center" style="font-size: 24px">Таблица</legend>
+            <table id="automobileTable" align="center" border="1" cellpadding="5" style="width: 98%">
+                <tr id="automobileProperties">
+                    <th>ID</th>
+                    <th>Серия</th>
+                    <th>Назначение</th>
+                    <th>Адрес</th>
+                    <th>Дата выпуска</th>
+                </tr>
+            </table>
+        </fieldset>
+</div>
+</body>
+</html>
