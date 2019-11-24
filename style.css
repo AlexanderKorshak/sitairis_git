@@ -1,0 +1,125 @@
+/* main */
+html {
+    margin: 0;
+    width: 100%;
+    background-image: url(../resource/1.jpg);
+    background-size: auto;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    margin: 10px auto auto;
+    /*
+    width: 924px;
+    */
+    width: 82%;
+    height: 320px;
+    background: url("../resource/header.jpg") 100% 62%;
+    /*    border: 6px solid #373b46;*/
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px 2px;
+}
+
+/* content container */
+#content__container {
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    margin: 40px auto auto;
+    z-index: 0;
+    font-family: Comic Sans MS, serif;
+    font-size: 18px;
+}
+
+#content__container:before	 {
+    position: absolute;
+    content: '';
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: rgba(111, 128, 114, 1);
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px 2px;
+}
+/* content form */
+
+#content_form {
+    padding: 15px;
+}
+
+#content_form input[type="date"] {
+    font-family: Comic Sans MS, serif;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#content_form input[type="text"] {
+    font-family: Comic Sans MS, serif;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+select {
+    font-family: Comic Sans MS, serif;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+input:invalid {
+    border:1.25px solid #ab4030;
+}
+
+input:valid {
+    border: 1.25px solid green;
+}
+
+#address {
+    width: 350px;
+}
+
+button {
+    color: #4f4d6e;
+    background: azure;
+    border: 1px solid azure;
+    padding: 5px 10px;
+    font-family: Comic Sans MS, serif;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button.blue {
+    color: azure;
+    border: 1px solid #4f4d6e;
+    background: #4f4d6e;
+}
+
+button.red {
+    color: azure;
+    border: 1px solid #ab4030;
+    background: #ab4030;
+}
+
+table{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+th{
+    border: solid black;
+}
+
